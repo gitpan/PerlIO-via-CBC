@@ -1,0 +1,7 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/PerlIO-via-CBC.t
+lib/PerlIO/via/CBC.pm
+META.yml                                 Module meta-data (added by MakeMaker)
