@@ -6,7 +6,7 @@ use warnings;
 use Crypt::CBC ();
 
 use vars '$VERSION';
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 my $Config = {};
 
@@ -183,15 +183,14 @@ L<PerlIO::via>
 
 =head1 AUTHOR
 
-Sascha Kiefer, <lt>perl@intertivityNOSP4M.com<gt>
+Sascha Kiefer, E<lt>sk@intertivity.comE<gt>, L<http://www.intertivity.com>
 
 =head1 COPYRIGHT AND LICENSE
 
 Copyright (C) 2005 by Sascha Kiefer
 
 This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.8.4 or,
-at your option, any later version of Perl 5 you may have available.
+it under the same terms as Perl itself.
 
 
 =cut
