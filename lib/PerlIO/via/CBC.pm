@@ -6,16 +6,16 @@ use warnings;
 use Crypt::CBC ();
 
 use vars '$VERSION';
-$VERSION = '0.05';
+$VERSION = '0.06';
 
 my $Config = {};
 
 sub config {
 	my ($class, %args) = @_;
 	if(%args) {
-		while(my($key, $val) = each %args) {
-			$Config->{$key} = $val;
-		}
+		$Config = {%args};
+	} else {
+		$Config = {};
 	}
 	return $Config;
 }
@@ -183,7 +183,7 @@ L<PerlIO::via>
 
 =head1 AUTHOR
 
-Sascha Kiefer, E<lt>sk@intertivity.comE<gt>, L<http://www.intertivity.com>
+Sascha Kiefer, E<perl@intertivityNOSP4M.comE>, L<http://www.intertivity.com>
 
 =head1 COPYRIGHT AND LICENSE
 

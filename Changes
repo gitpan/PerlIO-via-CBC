@@ -1,5 +1,15 @@
 Revision history for Perl extension PerlIO::via::CBC.
 
+0.06  Mon Feb 14 01:59:00 2005
+	- pod fixed
+	- sub config modified: now more efficient and resets predefined config
+
+0.05  Mon Feb 14 01:59:00 2005
+	- pod fixed
+
+0.05  Mon Feb 14 01:59:00 2005
+	- pod fixed
+
 0.04  Mon Feb 14 01:59:00 2005
 	- Crypt::DES added to PREREQ_PM
 
