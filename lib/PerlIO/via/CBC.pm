@@ -1,13 +1,12 @@
 package PerlIO::via::CBC;
 
-use 5.008004;
 use strict vars;
 use warnings;
 
 use Crypt::CBC ();
 
 use vars '$VERSION';
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 my $Config = {};
 
@@ -138,9 +137,9 @@ PerlIO::via::CBC - PerlIO layer for reading/writing CBC encrypted files
 
 =head1 SYNOPSIS
 
-  use PerlIO::via::Crypt;
+  use PerlIO::via::CBC;
 
-  PerlIO::via::Crypt->config(
+  PerlIO::via::CBC->config(
     'key'             => 'my secret key',
     'cipher'          => 'Blowfish',
     'iv'              => '$KJh#(}q',
@@ -150,13 +149,14 @@ PerlIO::via::CBC - PerlIO layer for reading/writing CBC encrypted files
     'pcbc'            => 1  #default 0
   );
 
-  open(my $fh, '>:via(PerlIO::via::CBC)', $file)
+  my $fh;
+  open($fh, '>:via(PerlIO::via::CBC)', $file)
     or die "Can't open $file for encryption: $!\n";
   print $fh $lots_of_secret_data;
   close($fh)
     or die "Error closing file: $!\n";
 
-  open(my $fh, '<:via(PerlIO::via::CBC)', $file)
+  open($fh, '<:via(PerlIO::via::CBC)', $file)
     or die "Can't open $file for decryption: $!\n";
   print <$fh>;
   close($fh)
@@ -183,7 +183,7 @@ L<PerlIO::via>
 
 =head1 AUTHOR
 
-Sascha Kiefer<lt>perl@intertivityNOSP4M.com<gt>
+Sascha Kiefer, <lt>perl@intertivityNOSP4M.com<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
