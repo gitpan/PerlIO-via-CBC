@@ -1,5 +1,8 @@
 Revision history for Perl extension PerlIO::via::CBC.
 
+0.04  Mon Feb 14 01:59:00 2005
+	- Crypt::DES added to PREREQ_PM
+
 0.03  Fri Feb 11 20:40:00 2005
 	- example fixed
 

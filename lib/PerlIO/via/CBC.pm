@@ -6,7 +6,7 @@ use warnings;
 use Crypt::CBC ();
 
 use vars '$VERSION';
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 my $Config = {};
 
