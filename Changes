@@ -1,5 +1,9 @@
 Revision history for Perl extension PerlIO::via::CBC.
 
+0.07  Thu Dec  1 01:48:45 2005
+	- POD fixed
+	- Copyright fixed
+
 0.06  Mon Feb 14 01:59:00 2005
 	- pod fixed
 	- sub config modified: now more efficient and resets predefined config

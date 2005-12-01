@@ -6,7 +6,7 @@ use warnings;
 use Crypt::CBC ();
 
 use vars '$VERSION';
-$VERSION = '0.06';
+$VERSION = '0.07';
 
 my $Config = {};
 
@@ -180,17 +180,13 @@ Allows the configuration of the CBC. Check L<Crypt::CBC>->new() for more informa
 
 L<PerlIO::via>
 
-
 =head1 AUTHOR
 
-Sascha Kiefer, E<perl@intertivityNOSP4M.comE>, L<http://www.intertivity.com>
+Sascha Kiefer, C<esskar@cpan.org>
 
-=head1 COPYRIGHT AND LICENSE
+=head1 COPYRIGHT
 
-Copyright (C) 2005 by Sascha Kiefer
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
-
+This program is free software, you can redistribute it and/or modify it
+under the same terms as Perl itself.
 
 =cut
