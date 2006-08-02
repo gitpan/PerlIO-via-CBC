@@ -1,5 +1,10 @@
 Revision history for Perl extension PerlIO::via::CBC.
 
+0.08  Thu Aug  3 02:15:10 2006
+    - POD added and fixed
+    - switched to Module::Build
+    - POD and POD COVERAGE tests
+
 0.07  Thu Dec  1 01:48:45 2005
 	- POD fixed
 	- Copyright fixed

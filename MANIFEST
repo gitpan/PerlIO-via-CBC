@@ -1,7 +1,12 @@
+Build.bat
+Build.PL
 Changes
-Makefile.PL
-MANIFEST
-README
-t/PerlIO-via-CBC.t
 lib/PerlIO/via/CBC.pm
-META.yml                                 Module meta-data (added by MakeMaker)
+Makefile.PL
+MANIFEST			This list of files
+META.yml
+README
+t/01use.t
+t/02pod.t
+t/03podcoverage.t
+t/04PerlIO-via-CBC.t

@@ -6,7 +6,7 @@ use warnings;
 use Crypt::CBC ();
 
 use vars '$VERSION';
-$VERSION = '0.07';
+$VERSION = '0.08';
 
 my $Config = {};
 
@@ -172,9 +172,20 @@ It uses L<Crypt::CBC> to do the CBC. So check L<Crypt::CBC> for more information
 
 Allows the configuration of the CBC. Check L<Crypt::CBC>->new() for more information.
 
+=head1 OVERRIDEN METHODS
+
+This section lists the overriden PerlIO::via methods.
+
+=head2 FILL
+
+=head2 FLUSH
+
+=head2 PUSHED
+
 =head1 REQUIRED MODULES
 
- Crypt::CBC (any)
+    Crypt::CBC' => 2.12
+    Crypt::DES' => 2.03
 
 =head1 SEE ALSO
 
